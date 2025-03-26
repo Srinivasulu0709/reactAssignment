@@ -1,5 +1,5 @@
 import './App.scss';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Footer from './components/Footer';
 import Homepage from './components/home/Homepage';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
@@ -16,12 +16,6 @@ import ConfirmOrder from './components/ConfirmOrder';
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [cartCount, setCartCount] = useState(0);
-
-  // useEffect(() => {
-  //   const cart = JSON.parse(localStorage.getItem('cart')) || [];
-  //   const totalItems = cart.reduce((count, item) => count + (item.quantity || 1), 0);
-  //   setCartCount(totalItems);
-  // }, []);
 
 
   const updateCartCount = () => {
