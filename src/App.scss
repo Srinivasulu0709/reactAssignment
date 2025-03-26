@@ -1,7 +1,112 @@
+@import './//assets/styles/variables';
+
 .nav-bar {
     .search-form {
         .form-control {
             width: 16rem;
         }
     }
+}
+
+.navbar-logo {
+    cursor: pointer;
+}
+
+
+.cart-count {
+    height: 20px;
+    border-radius: 10px !important;
+}
+
+.add-cart-button {
+    width: 160px;
+    font-size: 14px !important;
+    font-weight: $font-bold-600 !important;
+    border-radius: 10px;
+}
+
+.cart-image {
+    height: 40px;
+    width: 40px;
+}
+
+
+.button-group {
+    .decrease-button {
+        background: none;
+        color: $black-color;
+        border-right: none;
+        border-radius:10px 0 0 10px;
+         &:hover {
+            background: none;
+            color: $black-color;
+         }
+    }
+    .quantity-button {
+        background: none !important;
+        color: $black-color !important;
+        border-left: none;
+        border-right: none;
+        font-weight: $font-bold-600;
+    }
+    .increase-button {
+        background: none;
+        color: $black-color;
+        border-left: none;
+        border-radius: 0 10px 10px 0;
+        &:hover {
+            background: none;
+            color: $black-color;
+         }
+    }
+}
+
+
+.contine-button{
+    height: 46px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: $font-bold-600;
+    margin: 1rem 0 2rem 0;
+}
+
+.css-1jpc804-MuiDivider-root {
+    border-color: rgb(44 41 41) !important;
+}
+
+.cart-price {
+    font-weight: 500;
+    color: blue;
+}
+.cart-page,.checkout-page {
+    .list-group-item {
+        height: 36px !important;
+        border: none !important;
+    }
+
+    .cart-list {
+        overflow: scroll;
+        height: 218px;
+        overflow-x: hidden;
+    }
+}
+
+
+.cofirm-order {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    .confirm-card {
+        background: #1f8a58 ;
+        width: 600px ;
+        margin-bottom: 11rem;
+        color: #fff ;
+    }
+}
+
+.button-color {
+    background-color: $primary-color !important;
+    border:none !important;
+    color:$white-color !important;
 }

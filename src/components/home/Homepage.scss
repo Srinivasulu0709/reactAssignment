@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         cursor: pointer;
-        button {
+        .add-cart-button {
             align-items: center;
             font-size: $font-size;
             border-radius: 8px;
@@ -21,14 +21,14 @@
             max-height: 200px;
         }
 
-        .product-title {
+        .home-product-title {
             font-size: $font-size;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
 
-        .poduct-description {
+        .home-product-description {
             font-size: 0.875rem;
             display: -webkit-box;
             -webkit-line-clamp: 3;
@@ -36,7 +36,7 @@
             overflow: hidden;
         }
 
-        .poduct-price {
+        .home-poduct-price {
             font-size: $font-size;
             font-weight: $font-bold-600;
         }
