@@ -17,11 +17,11 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [cartCount, setCartCount] = useState(0);
 
-  useEffect(() => {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const totalItems = cart.reduce((count, item) => count + (item.quantity || 1), 0);
-    setCartCount(totalItems);
-  }, []);
+  // useEffect(() => {
+  //   const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  //   const totalItems = cart.reduce((count, item) => count + (item.quantity || 1), 0);
+  //   setCartCount(totalItems);
+  // }, []);
 
 
   const updateCartCount = () => {

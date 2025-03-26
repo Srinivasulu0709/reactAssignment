@@ -56,7 +56,7 @@ const navigate = useNavigate();
                            <div className="ms-2 me-auto">
                              <div className="fw-bold">Estimated Total</div>
                            </div>
-                           <h5> Rs. {totalPrice}  </h5>
+                           <h5> Rs. {totalPrice.toFixed(2)}  </h5>
                          </ListGroup.Item>
                          <Button variant="mb-2 mt-3 " className='button-color' onClick={()=>navigateConfirmation()} >Place Order</Button>
                          </ListGroup>

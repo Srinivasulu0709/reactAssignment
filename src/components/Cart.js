@@ -161,9 +161,9 @@ function Cart({ updateCartCount }) {
                 <div className="ms-2 me-auto">
                   <div className="fw-bold">Estimated Total</div>
                 </div>
-                <h5> Rs. {totalPrice}  </h5>
+                <h5> Rs. {totalPrice.toFixed(2)}  </h5>
               </ListGroup.Item>
-              <Button variant="pmb-2 mt-2" className='button-color' onClick={()=> navigateCheckout()}>Checkout</Button>
+              <Button variant="pmb-2 mt-5" className='button-color' onClick={()=> navigateCheckout()}>Checkout</Button>
               <Form>
                  <InputGroup className="mb-3 mt-3">
                  <Form.Control
