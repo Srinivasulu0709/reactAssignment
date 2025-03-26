@@ -92,6 +92,7 @@ function Homepage({ searchTerm, setCartCount }) {
           return (
             <Col key={product.id}>
               <Card className="product-card">
+               
                 <Card.Img
                   className="product-image"
                   variant="top"
@@ -101,11 +102,16 @@ function Homepage({ searchTerm, setCartCount }) {
                   }
                 />
                 <Card.Body>
+                <div  onClick={() =>
+                    navigate(`/product/${product.id}`)
+                  }>
                   <Card.Title className="home-product-title">{product.title}</Card.Title>
                   <Card.Text className="home-product-description">
                     {product.description}
                   </Card.Text>
-                  <Card.Text className="product-rating">
+                 
+                </div>
+                 <Card.Text className="product-rating">
                     <Rating
                       name="half-rating-read"
                       defaultValue={product.rating.rate}
