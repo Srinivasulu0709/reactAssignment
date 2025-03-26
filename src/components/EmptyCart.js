@@ -11,7 +11,7 @@ const navigate = useNavigate();
 
   return (
     <Container className="text-center">
-        <Image src= {emprycart} width={400} height={280} />
+        <Image src= {emprycart} width={400} height={350} />
         <h2>Your Cart is Empty</h2>
         <Button  className='contine-button button-color' onClick={()=> navigate('/')} >Continue Shopping </Button>
     </Container>

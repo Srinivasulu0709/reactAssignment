@@ -49,7 +49,7 @@ function App() {
           <Route path="/product/:productId" element={<ProductDetails updateCartCount={updateCartCount} setCartCount={setCartCount}/>} />
           <Route path="/cart" element={<Cart updateCartCount={updateCartCount} />} />
           <Route path="/cart/checkout" element={<CheckoutPage updateCartCount={updateCartCount} />} />
-          <Route path="/cart/checkout/confirmorder" element={<ConfirmOrder />} />
+          <Route path="/confirmorder" element={<ConfirmOrder />} />
           <Route path="/emptycart" element={<EmptyCart  />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>

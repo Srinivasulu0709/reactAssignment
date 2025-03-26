@@ -116,7 +116,6 @@ function ProductDetails({ setCartCount }) {
   const quantity = getProductQuantity(product.id);
   const isInCart = quantity > 0;
 
-  
 
   return (
     <Container className="product-details-container mt-3">

@@ -47,6 +47,10 @@ function Cart({ updateCartCount }) {
     updateCartCount(0);
   };
 
+  const navigateCheckout = () => {
+      navigate('/cart/checkout')
+  }
+
   if (cartItems.length === 0) {
     return (
       <Container>
@@ -159,7 +163,7 @@ function Cart({ updateCartCount }) {
                 </div>
                 <h5> Rs. {totalPrice}  </h5>
               </ListGroup.Item>
-              <Button variant="pmb-2 mt-2" className='button-color' onClick={()=> navigate('/cart/checkout')}>Checkout</Button>
+              <Button variant="pmb-2 mt-2" className='button-color' onClick={()=> navigateCheckout()}>Checkout</Button>
               <Form>
                  <InputGroup className="mb-3 mt-3">
                  <Form.Control

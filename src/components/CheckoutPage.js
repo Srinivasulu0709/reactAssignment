@@ -17,7 +17,10 @@ const navigate = useNavigate();
   const totalPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   const navigateConfirmation = () => {
-    navigate('/cart/checkout/confirmorder');
+    localStorage.removeItem('cart');
+    setCartItems([]);
+    updateCartCount(0);
+    navigate('/confirmorder');
   }
 
   return (
